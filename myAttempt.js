@@ -57,8 +57,8 @@ for (i = 0; i < listElements.length; i++){
 var list2 = document.getElementById("thelist2")
 
 
-var fib = function(num){
-    if (n <= 2){
+var fib = function(n){   
+    if (n <= 1){
 	return 1;
     }
     else{
@@ -73,7 +73,7 @@ var f2 = function(){
     var len = list2.getElementsByTagName("li").length;
     var num;
     if (len == 0){
-	num = fib(0);
+	num = 0;
     }
     else{
 	num = fib(len-1);
@@ -82,6 +82,6 @@ var f2 = function(){
     newBullet2.innerHTML = num;
     list2.appendChild(newBullet2);
     
-};`
+};
 
-    b2.addEventListener("click",f2);
+b2.addEventListener("click",f2);
